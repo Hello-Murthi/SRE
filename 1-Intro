@@ -1,0 +1,212 @@
+
+Famouse Questions:
+
+---------------------------------------------------------------------------------------------------
+
+SLA vs SLO vs SLI
+
+* SLA (service level agreement)
+	Contract between You and Service Provider about measurable metrics like uptime, responsiveness, and responsibilities.
+
+* SLO (service level objective)
+	Is a goal that service provider wants to reach
+
+* SLI (service level indicator)
+	Current Status/Metric of service
+
+SLA -> SLO -> SLI
+
+---------------------------------------------------------------------------------------------------
+
+Why or How to troubleshoot when web app is slow?
+
+* Overloaded server
+* Database request too slow to execute or poorly written
+* Issues at the load balancing level (overloading one server)
+* Slow Web request
+* Slow application code execution
+* DNS configuration issue
+* Network performance issue
+
+* Adding more CPU/RAM
+* Add cache
+* Optimizing DB queries
+* Extract the database to a different server
+* Use proper configuration settings
+
+* Check logs
+* Monitor dashboards/infra
+
+---------------------------------------------------------------------------------------------------
+
+What is Certificate? SSL?
+
+An SSL certificate is a bit of code on your web server that provides security for online communications. 
+When a web browser contacts your secured website, the SSL certificate enables an encrypted connection. 
+It's kind of like sealing a letter in an envelope before sending it through the mail.
+
+
+SSL (Secure Sockets Layer), more commonly called TLS (Transport Layer Security), is a protocol for encrypting Internet traffic and verifying server identity. 
+Any website with an HTTPS web address uses SSL/TLS.
+
+---------------------------------------------------------------------------------------------------
+
+What is inside SSL cert?
+
+* The domain name that the certificate was issued for
+* Which person, organization, or device it was issued to
+* Which certificate authority issued it
+* The certificate authority's digital signature
+* Associated subdomains
+* Issue date of the certificate
+* Expiration date of the certificate
+* The public key (the private key is kept secret)
+
+---------------------------------------------------------------------------------------------------
+
+Difference between Public IP and Private IP?
+
+Public IP:
+* Can be accessed directly over the internet 
+
+Private IP:
+* Are not routed on the Internet, and no traffic can be sent to them from the Internet
+* Are only supposed to work within the local network
+
+---------------------------------------------------------------------------------------------------
+
+What is Error Budget?
+
+An error budget is the maximum amount of time that a technical system can fail without contractual consequences
+
+---------------------------------------------------------------------------------------------------
+
+What is Observability?
+
+is a technical solution that focuses on helping IT firms understand what processes are going on in an application by looking at the application’s output
+
+---------------------------------------------------------------------------------------------------
+
+Differenec between DevOps and SRE?
+
+DevOps:
+
+	DevOps teams are focused on core development. 
+	They are working on a product or application that is the solution to someone’s problem. 
+	They are taking an agile approach to software development that helps them build, test, deploy and monitor applications with speed, quality and control.
+
+	Core development DevOps are the guys that love writing software. They are writing code and testing it and pushing it out into production to get an application line to help solve a problem.
+
+	DevOps is going to automate deployment. They’re going to automate tasks and features. 
+
+SRE:
+
+	SREs are working on the implementation of the core.
+	They are constantly giving feedback back into that core development group
+	
+	Ex:
+		Hey, something that you guys have designed isn't working exactly the way that you think that it is
+
+	SRE leverages operations data and software engineering to automate IT operations tasks and accelerate software delivery, while minimizing IT risk.
+
+	SREs are more investigative. They are willing to do the analysis to find why something has gone wrong. They want to ensure that the same problems don’t keep happening. They want to be proactive in their efforts, not reactive. They want to automate repetitive tasks so they can innovate.
+
+	SRE is going to automate redundancy
+
+---------------------------------------------------------------------------------------------------
+
+Process:
+When execution of a program allows you to perform the appropriate actions specified in the program, that’s called process.
+
+Thread:
+Thread is the segment of processes.
+
+Process is not lightweight. Threads are lightweight.
+The process takes more time to terminate. Threads take less time to terminate.
+The process does not share data. Threads share data with each other.
+
+---------------------------------------------------------------------------------------------------
+
+Why error budgets is used?
+
+Error budget encourages the teams to minimize real incidents and maximize innovation by taking risks within acceptable limits.
+
+---------------------------------------------------------------------------------------------------
+
+Define the Error budget policy?
+
+An error budget policy demonstrates how a business decides to trade off reliability work against other feature work when SLO indicates a service is not reliable enough.
+
+---------------------------------------------------------------------------------------------------
+
+What is CI/CD?
+
+CI (continuous integration)
+where developers frequently merge code changes into a central repository where automated builds and tests run
+
+CD (continuous delivery or continuous deployment)
+
+
+
+Continuous Delivery:
+
+Is an extension of continuous integration since it automatically deploys all code changes to a testing and/or production environment after the build stage. 
+
+This means that on top of automated testing, you have an automated release process and you can deploy your application any time by clicking a button.
+
+with continuous delivery, you can decide to release daily, weekly, fortnightly, or whatever suits your business requirements.
+
+
+
+
+Continuous Deployment:
+
+With this practice, every change that passes all stages of your production pipeline is released to your customers
+
+There's no human intervention, and only a failed test will prevent a new change to be deployed to production.
+
+---------------------------------------------------------------------------------------------------
+
+DHCP (Dynamic Host Configuration Protocol)
+
+Dynamically assigns an IP address and other network configuration parameters to each device on the network
+
+---------------------------------------------------------------------------------------------------
+
+How tosecure your Docker containers?
+
+* Choose third party containers carefully
+* Enable Docker content trust
+* Set resource limit for your containers
+
+---------------------------------------------------------------------------------------------------
+
+Best SRE Tools for each Stage of DevOps?
+
+	Plan: Jira, Pivotal Tracker, and other task management tool
+	Create: Source-control tools like GitHub 
+	Verify: CI/CD tools like Jenkins or  CircleCI
+	Package: Container orchestration services like Kubernetes or Mesosphere.
+	Configure: Tools like Terraform and Ansible
+
+---------------------------------------------------------------------------------------------------
+
+What is an incident command system?
+
+Is a standardized approach to the command, control, and coordination of emergency response providing a common hierarchy within which responders
+
+---------------------------------------------------------------------------------------------------
+
+Describe the boot process of a Linux System.
+
+The machine's BIOS or boot microcode hundreds and runs a boot loader. Boot loader finds the kernel image on the disk and loads it into memory, to start the system. The kernel initializes the devices and their drivers.
+
+---------------------------------------------------------------------------------------------------
+
+Incident vs Problem
+
+Incident is a single unplanned event that causes a service disruption
+
+Problem is “a cause or potential cause of one or more incidents”
+
+---------------------------------------------------------------------------------------------------
