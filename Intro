@@ -172,3 +172,15 @@ Problem:
 * Problem is a cause of one or more incidents
 
 -------------------------------------------------------------------------
+
+Principles of SRE:
+
+* Embracing Risk
+* Service Level Objectives
+* Eliminating Toil (Tough Work)
+* Monitoring Distributed Systems
+* Automation
+* Release Engineering
+* Simplicity
+
+-------------------------------------------------------------------------
